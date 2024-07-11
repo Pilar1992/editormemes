@@ -1,12 +1,9 @@
 
 /* elementos con innerHTML o DOM */
-
 const txt1 = document.getElementById ("txt1");
 const txt2 = document.getElementById ("txt2");
 
-
 /* elementos con eventos */
-
 const toptxt = document.getElementById("toptxt");
 const btmtxt = document.getElementById("btmtxt");
 const topCheck = document.getElementById("top-check");
@@ -15,7 +12,6 @@ const btmCheck = document.getElementById("btm-check");
 toptxt.addEventListener("keyup", () => {
     txt1.innerHTML = toptxt.value;
 });
-
 
 btmtxt.addEventListener("keyup", () => {
     txt2.innerHTML = btmtxt.value;

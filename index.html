@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./queries.css">
+    <link rel="icon" type="image/x-icon" href="./assets/dogememe.png">
 </head>
 <body id="body">
     <header id="header">
@@ -27,27 +29,29 @@
                     Bottom Text
                 </article>
             </div>
-            <button class="buttondwld" id="button5">Descargar meme</button>
         </section>
-        <aside class="aside">
+        <div class="buttoncontainer">        
+            <button class="buttondwld">Descargar meme</button>
+        </div>
+        <aside class="txtaside">
             <form>
                 <h2>Texto</h2>
-                <label>Superior</label>
+                <label class="subtitle">Superior</label>
                 <input type="text" value="TOP TEXT" id="toptxt">
-                
                 <div>
                     <input id="top-check" type="checkbox">
                     <label>Sin texto superior</label>
                 </div>
-                <label>Inferior</label>
+                <br>
+                <label class="subtitle">Inferior</label>
                 <input type="text" value="BOTTOM TEXT" id="btmtxt">
                 <div>
                     <input id="btmcheck" type="checkbox">
                     <label>Sin texto inferior</label>
                 </div>
                 <br>
-                <div>
-                    <label>Fuente</label>
+                <div class="fontbox">
+                    <label class="typeface">Fuente</label>
                     <select class="fontbox" id="fuente">
                         <option value="Arial">Arial</option>
                         <option value="Arial Black">Arial Black</option>
@@ -57,43 +61,39 @@
                         <option value="Helvetica" class="Helvetica">Helvetica</option>
                         <option value="Freestyle Script">Freestyle Script</option>
                         <option value="Verdana">Verdana</option>
-                </select>
-                    <label>
-                        Tamaño
-                    </label>
-                    <input type="number" value="40"> 
+                    </select>
+                    <input type="number" value="40" class="fontsize"> 
+                        <button class="textbuttons" alt="alinear texto a la izquierda"><img width="30" height="30" src="https://img.icons8.com/ios/50/align-left.png" alt="align-left"/></button>
+                        <button class="textbuttons" alt="justificar texto"><img width="30" height="30" src="https://img.icons8.com/ios/50/align-justify.png" alt="align-justify"/></button>
+                        <button class="textbuttons" alt="alinear texto a la derecha"><img width="30" height="30" src="https://img.icons8.com/ios/50/align-right.png" alt="align-right"/></button>
                 </div>
                 <br>
-                <div>
-                    <input type="image">
-                    <input type="image">
-                    <input type="image">
-                </div>
-                <br>
-                <div>
-                    <label>Color de fuente</label> 
+                <div class="colorchoice">
+                    <label class="colorpick">Color de fuente</label> 
                     <input type="color" value= #000000> 
                     <br>
-                    <label>Color de fondo</label>
+                    <label class="colorpick">Color de fondo</label>
                     <input type="color" value= #FFFFFF>
                     <br>
+                </div>
+                <div>
                     <input type="checkbox">
                     <label>Fondo transparente</label>
                 </div>
                 <br>
-                <div>
-                    <label>Contorno</label>
-                    <button id="button1">Ninguno</button>
-                    <button id="button2">Claro</button>
-                    <button id="button3">Oscuro</button>
+                <div class="outline">
+                    <label class="outline">Contorno</label>
+                    <button class="linebtn" id="button1">Ninguno</button>
+                    <button class="linebtn" id="button2">Claro</button>
+                    <button class="linebtn" id="button3">Oscuro</button>
                 </div>
                 <br>
-                <div>
-                    <label>Espaciado</label>
+                <div class="fontbox">
+                    <label class="typeface">Espaciado</label>
                     <input type="number">
-                    <label>Interlineado</label>
-                    <select>
-                        <option value="0.8">0.8</option>
+                    <label class="typeface">Interlineado</label>
+                    <select class="textbuttons">
+                        <option value="0.8" >0.8</option>
                         <option value="1.0">1.0</option>
                         <option value="1.2">1.2</option>
                         <option value="1.5">1.5</option>
@@ -102,7 +102,7 @@
                 </div>
             </form>
         </aside>
-        <aside class="aside">
+        <aside class="imgaside">
             <form>
                 <h2>Imagen</h2>
                 <label for="url">URL</label>
