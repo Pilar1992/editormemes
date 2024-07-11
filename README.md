@@ -1,2 +1,2 @@
-# editormemes
-Editor de memes hecho como parte del curso de Front end de ADA
+# EditorDeMemes
+Proyecto para la edición y creación de memes, hecho como parte de la cursada en ADA
